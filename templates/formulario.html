@@ -4,6 +4,7 @@
 {% block content %}
 <h2>Formulario de registro</h2>
 <form method="POST">
+    <div style="display: flex; flex-direction: column; max-width: 400px;">
     Nombre: <input type="text" name="nombre" required><br>
     Email: <input type="email" name="email" required><br>
     Edad: <input type="number" name="edad" required><br>
@@ -15,7 +16,7 @@
         </select><br>
 
     Comentarios: <textarea name="comentarios" required></textarea><br>
-
+</div>
     <input type="submit" value="Enviar">
 </form>
 {% endblock %}
