@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Formulario de registro</h2>
+<form method="POST">
+    Nombre: <input type="text" name="nombre" required><br>
+    Email: <input type="email" name="email" required><br>
+    Edad: <input type="number" name="edad" required><br>
+    Materia: <select name="materia" id="materia" required><br>
+        <option value="Nube">Nube</option>
+        <option value="Matematicas">Matematicas</option>
+        <option value="FrontEnd">Desarrollo Frontend</option>
+        <option value="POO">Programación Orientada a Objetos</option>
+        </select><br>
+
+    Comentarios: <textarea name="comentarios" required></textarea><br>
+
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}

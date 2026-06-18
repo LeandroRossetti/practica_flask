@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Datos recibidos</h2>
+<p>Nombre: {{ nombre }}</p>
+<p>Apellido: {{ apellido }}</p>
+<p>Login: {{ login }}</p>
+<p>Contraseña: {{ password }}</p>
+<p>Email: {{ email }}</p>
+
+<h3>Logins cargados</h3>
+{% if usuarios_cargados %}
+<ul>
+	{% for login in usuarios_cargados %}
+	<li>{{ login }}</li>
+	{% endfor %}
+</ul>
+{% else %}
+<p>No hay usuarios cargados todavía.</p>
+{% endif %}
+{% endblock %}
